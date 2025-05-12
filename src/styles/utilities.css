@@ -1,0 +1,28 @@
+.title-font {
+  font-family: var(--font-title);
+}
+.text-font {
+  font-family: var(--font-sans);
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+}
+img {
+  /* TODO: need to check all cases */
+  object-fit: cover;
+}
