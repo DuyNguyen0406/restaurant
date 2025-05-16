@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
-import Footer from "./footer";
+import { SkipToMainContent } from "@/components/widget";
 import Header from "./header";
+import Footer from "./footer";
 import cn from "@/utils/cn";
 
 function Layout() {
@@ -14,6 +15,7 @@ function Layout() {
 
   return (
     <div className="relative min-h-dvh">
+      <SkipToMainContent />
       <Header />
       <main
         id="main-content"

@@ -1,6 +1,6 @@
 export function Close({
   size = 40,
-  className = "fill-black",
+  className = "fill-white",
 }: {
   size?: number;
   className?: string;

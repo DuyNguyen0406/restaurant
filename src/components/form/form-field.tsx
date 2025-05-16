@@ -61,14 +61,15 @@ export function FormField<T extends FieldValues>({
           )}
         >
           {label}{" "}
-          <span aria-hidden="true" className="text-red-500">
+          {/* <span aria-hidden="true" className="text-red-500">
             {required && "*"}
-          </span>
+          </span> */}
         </label>
       )}
       {typeof children === "function"
         ? children(p)
         : cloneElement(children, {
+            ...field,
             [onChangePropName]: field.onChange,
             ...omit(p, "field"),
           })}

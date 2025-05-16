@@ -5,6 +5,14 @@
   font-family: var(--font-sans);
 }
 
+.text-special-font {
+  font-family: var(--font-special);
+}
+
+.text-special1-font {
+  font-family: var(--font-special1);
+}
+
 .image-container img {
   width: 100%;
   display: block;
@@ -23,6 +31,21 @@
   -ms-overflow-style: none;
 }
 img {
-  /* TODO: need to check all cases */
   object-fit: cover;
 }
+.clip-diamond {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); 
+}
+
+.leaf-shape {
+  clip-path: path("M 65 0 C 130 60 130 135 65 195 C 0 135 0 60 65 0 Z");
+  transform: rotate(35deg);
+}
+
+
+
+
