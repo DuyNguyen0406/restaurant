@@ -3,7 +3,7 @@ import Food from "@/assets/images/png/about-hero.png";
 
 export default function Hero() {
   return (
-    <Section.Root className="col-full-width content-grid pt-[10rem] pb-[6rem] bg-[#0C1424] text-[#D6BFA6]">
+    <Section.Root className="col-full-width content-grid pt-[12rem] pb-[6rem] bg-[#0C1424] text-[#D6BFA6]">
       <div className="col-content flex flex-col items-center justify-between gap-12">
         <div className="w-full text-center ">
           <h2 className="text-[2.5rem] lg:text-[5rem] title-font text-[#C9A581]">
