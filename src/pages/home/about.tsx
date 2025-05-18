@@ -28,7 +28,7 @@ const About = () => {
               </h2>
 
               <div className="mt-4">
-                <p className="text-white w-full lg:w-[70%] text-[17px] leading-7 text-center md:text-start">
+                <p className="text-white w-full lg:w-[70%] text-[1.0625remm] leading-7 text-center md:text-start">
                   We take pride in creating an inviting atmosphere that feels
                   like a home away from home. Whether you’re here for a
                   leisurely brunch, a romantic dinner, or a glass of wine with

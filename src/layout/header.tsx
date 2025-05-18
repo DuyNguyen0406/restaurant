@@ -31,11 +31,11 @@ function Header() {
         <div className="content-grid relative">
           {!isScrolled && (
             <div className="col-content flex flex-col md:flex-row justify-between items-center text-gray-500 py-[0.9375rem] transition-opacity duration-300">
-              <div className="flex flex-row items-center gap-x-4 text-[17px] ">
+              <div className="flex flex-row items-center gap-x-4 text-[1.0625remm] ">
                 <p>Mon-Wed: 11a-9p</p>
                 <p>Thurs-Sun: 11a-10p</p>
               </div>
-              <div className="text-[15px]">
+              <div className="text-[0.9375rem]">
                 <p>Via Serlas 546, 6700 St. Moritz, Switzerland</p>
               </div>
             </div>

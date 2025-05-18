@@ -40,7 +40,7 @@ export default function FeedBack() {
               <p className="text-special1-font text-[32px] text-brown-500">
                 {title}
               </p>
-              <p className="text-[15px] text-gray-500 my-5">{content}</p>
+              <p className="text-[0.9375rem] text-gray-500 my-5">{content}</p>
               <p className="text-white text-[13px] uppercase">{author}</p>
             </div>
           ))}
