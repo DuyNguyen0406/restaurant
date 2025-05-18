@@ -16,7 +16,7 @@ export default function Reservation() {
               />
             </div>
           </div>
-          <div className="flex flex-1 flex-col w-full h-full bg-cover lg:px-10">
+          <div className="flex flex-1 flex-col w-full h-full bg-cover lg:px-10 pt-15 lg:pt-0">
             <h2 className="text-[2.8125rem] lg:text-[3.75rem] text-brown-500 title-font">
               Make a Reservation
             </h2>
