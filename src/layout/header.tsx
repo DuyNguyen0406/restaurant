@@ -44,7 +44,7 @@ function Header() {
           <div className="col-content flex flex-row items-center justify-between py-5 border-t border-b border-t-brown-500 border-b-brown-500">
             <div className="h-full w-1/5 md:border-r md:border-r-brown-500 md:flex hidden">
               <Link
-                to="/book-a-table"
+                to="/booking"
                 className="self-center text-[13px] text-white"
                 aria-label="nongdan.dev homepage"
               >

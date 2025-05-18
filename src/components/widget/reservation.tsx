@@ -1,7 +1,7 @@
 import Section from "@/components/widget/section";
 import ImageBookTable from "@/assets/images/png/book-table.png";
-import ContactForm from "./contact-form";
-import { Facebook, Github, LinkedIn, Slack, Twitter } from "@/components/icons";
+import ContactForm from "../../pages/home/contact-form";
+import { Github, LinkedIn, Slack, Twitter } from "@/components/icons";
 
 const socials = [
   {
@@ -28,10 +28,10 @@ const socials = [
 
 export default function Reservation() {
   return (
-    <Section.Root className="col-full-width content-grid pt-0">
+    <Section.Root className="col-full-width content-grid py-0">
       <div className="col-content h-full w-full">
         <div className="flex flex-col lg:flex-row w-full h-full">
-          <div className="flex flex-1 w-full h-[300px] md:h-auto">
+          <div className="flex flex-1 w-full h-[18.75rem] md:h-auto">
             <img
               src={ImageBookTable}
               alt="imageBookTable"
@@ -39,7 +39,7 @@ export default function Reservation() {
             />
           </div>
           <div className="flex flex-1 flex-col w-full h-full bg-cover pt-15 lg:pt-[220px] lg:px-10">
-            <h2 className="text-[40px] md:text-[50px] lg:text-[80px] text-brown-500 title-font">
+            <h2 className="text-[2.5rem] md:text-[3.125rem] lg:text-[5rem] text-brown-500 title-font">
               Make a Reservation
             </h2>
             <ContactForm />
@@ -60,10 +60,10 @@ export default function Reservation() {
               </div>
               <p className="text-sm text-white">Reservation by Phone</p>
               <div>
-                <p className="text-[40px] lg:text-[50px] text-gray-500 title-font leading-none">
+                <p className="text-[2.5rem] lg:text-[3.125rem] text-gray-500 title-font leading-none">
                   +56 3435 8936
                 </p>
-                <p className="text-[40px] lg:text-[50px] text-gray-500 title-font leading-none">
+                <p className="text-[2.5rem] lg:text-[3.125rem] text-gray-500 title-font leading-none">
                   +56 3435 8937
                 </p>
               </div>

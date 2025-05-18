@@ -59,10 +59,10 @@ export default function Hero({ shape = "rounded" }: HeroProps) {
           })}
         </div>
         <div className="text-center my-15">
-          <h2 className="text-[40px] lg:text-[90px] title-font text-[#C9A581] font-playfair mb-2 tracking-wide">
+          <h2 className="text-[2.5rem] lg:text-[5.625rem] title-font text-[#C9A581] font-playfair mb-2 tracking-wide">
             The Gourmet
           </h2>
-          <h2 className="text-[40px] lg:text-[90px] title-font text-[#C9A581] font-playfair mb-4 tracking-wide">
+          <h2 className="text-[2.5rem] lg:text-[5.625rem] title-font text-[#C9A581] font-playfair mb-4 tracking-wide">
             Garden
           </h2>
           <p className="text-base uppercase tracking-[0.3em] text-white/70 mt-4">

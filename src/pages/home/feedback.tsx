@@ -26,7 +26,7 @@ export default function FeedBack() {
     <Section.Root className="col-full-width content-grid pt-0 bg-primary-100">
       <div className="flex flex-col w-screen">
         <div className="text-center my-15">
-          <h2 className="text-[40px] lg:text-[80px] title-font text-[#C9A581]">
+          <h2 className="text-[2.5rem] lg:text-[5rem] title-font text-[#C9A581]">
             Tesimonials
           </h2>
           <p className="text-base uppercase tracking-[0.3em] text-white mt-2">

@@ -2,9 +2,9 @@ import { Fragment } from "react";
 import Hero from "./hero";
 import About from "./about";
 import Menu from "./menu";
-import Instagram from "./instagram";
+import Instagram from "@/components/widget/instagram";
 import FeedBack from "./feedback";
-import Reservation from "./reservation";
+import Reservation from "@/components/widget/reservation";
 
 function HomePage() {
   return (

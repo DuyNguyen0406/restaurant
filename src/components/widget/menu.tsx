@@ -1,5 +1,5 @@
 import { MouseEventHandler, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import Image1 from "@/assets/images/menu/menu-home.png";
 import Image2 from "@/assets/images/menu/menu-main.png";
@@ -42,10 +42,10 @@ export function Menu({ visible, onClose }: MobileMenuProps) {
       onClick: onClose,
     },
     { label: "Our Menus", to: "/menu", key: "menus", onClick: onClose },
-    { label: "About Us", to: "/about-us", key: "about", onClick: onClose },
+    { label: "About Us", to: "/about", key: "about", onClick: onClose },
     {
       label: "Book a Table",
-      to: "/book-a-table",
+      to: "/booking",
       key: "contact",
       onClick: onClose,
     },
@@ -98,15 +98,17 @@ export function Menu({ visible, onClose }: MobileMenuProps) {
               ))}
             </ul>
           </nav>
-          <div className="flex flex-col md:flex-row flex-1 text-[50px] text-white text-end md:text-start items-end justify-center gap-4">
+          <div className="flex flex-col md:flex-row flex-1 text-[3.125rem] text-white text-end md:text-start items-end justify-center gap-4">
             <div>
               <p className="uppercase text-base mb-5">Contact Us</p>
-              <p className="text-[17px]">Tel. (343)454-4364</p>
-              <p className="text-[17px]">Mail. reserve@grandrestaurant.com</p>
+              <p className="text-[1.0625rem]">Tel. (343)454-4364</p>
+              <p className="text-[1.0625rem]">
+                Mail. reserve@grandrestaurant.com
+              </p>
             </div>
             <div className="">
               <p className="uppercase text-base mb-5">Address</p>
-              <p className="text-[17px]">
+              <p className="text-[1.0625rem]">
                 Via Serlas 546, 6700 St. Moritz,
                 <br /> Switzerland
               </p>

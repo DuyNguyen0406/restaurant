@@ -4,6 +4,7 @@ import Layout from "./layout";
 import HomePage from "./pages/home";
 import BookTable from "./pages/booking";
 import OurMenu from "./pages/menu";
+import About from "./pages/about";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="booking" element={<BookTable />} />
           <Route path="menu" element={<OurMenu />} />
+          <Route path="about" element={<About />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

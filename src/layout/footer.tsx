@@ -22,10 +22,10 @@ const scheduleData = [
 
 export default function Footer() {
   return (
-    <Section.Root className="col-full-width content-grid pt-0">
+    <Section.Root className="col-full-width content-grid">
       <div className="flex flex-col flex-1 col-content">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          {scheduleData.map((item, index) => (
+          {scheduleData.map((item) => (
             <div
               key={item.title}
               className={`flex flex-1 flex-col items-center space-y-3 p-8 border-b border-b-brown-500 w-full
@@ -36,13 +36,13 @@ export default function Footer() {
                 }
               `}
             >
-              <p className="text-[22px] md:text-[30px] text-white title-font uppercase">
+              <p className="text-[22px] md:text-[1.875rem] text-white title-font uppercase">
                 {item.title}
               </p>
               {item.lines.map((line, i) => (
                 <p
                   key={i}
-                  className={`text-[15px] md:text-[17px] ${
+                  className={`text-[0.9375rem] md:text-[1.0625remm] ${
                     item.lastLinePrimary && i === item.lines.length - 1
                       ? "text-primary"
                       : "text-gray-500"
