@@ -27,7 +27,7 @@ export default function Hero({ shape = "rounded" }: HeroProps) {
   const shapeClass = shapeClassMap[shape];
 
   return (
-    <Section.Root className="col-full-width relative overflow-clip bg-gradient-to-b from-primary-200 to-white/0 pt-[15rem] pb-0">
+    <Section.Root className="col-full-width relative pt-[15rem] pb-0">
       <div className="col-content z-10 place-items-center">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {imageList.map(({ src, alt }, i) => {
