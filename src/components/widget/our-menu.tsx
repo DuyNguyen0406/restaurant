@@ -1,5 +1,7 @@
 import Section from "@/components/widget/section";
-
+import Food from "@/assets/images/png/menu-food.png";
+import Lemon from "@/assets/images/png/menu-lemon.png";
+import Steaf from "@/assets/images/png/menu-steaf.png";
 const data: { title: string }[] = [
   {
     title: "Appetizers",
@@ -17,9 +19,27 @@ const data: { title: string }[] = [
 
 export default function Menu() {
   return (
-    <Section.Root className="col-full-width content-grid">
+    <Section.Root className="col-full-width content-grid relative overflow-hidden">
+      <div className="absolute inset-0 z-[10] pointer-events-none hidden md:flex">
+        <img
+          src={Food}
+          alt="Appetizers"
+          className="absolute top-20 left-20 w-[9.375rem] h-[12.5rem] rounded-b-full rounded-t-full object-cover"
+        />
+        <img
+          src={Steaf}
+          alt="Main Courses"
+          className="absolute bottom-0 left-10 leaf-shape-45 object-cover"
+        />
+        <img
+          src={Lemon}
+          alt="Drinks"
+          className="absolute top-1/3 right-20 w-[9.375rem] h-[12.5rem] rounded-tl-[50%] rounded-br-[50%] object-cover "
+        />
+      </div>
+
       <div className="col-content place-items-center">
-        <p className="text-sm text-white ">Explore by our cuisines</p>
+        <p className="text-sm text-white">Explore by our cuisines</p>
 
         <div className="space-y-5 mx-auto my-10">
           {data.map((item, index) => (

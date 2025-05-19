@@ -12,13 +12,13 @@ export default function Hero() {
         </div>
         <div className="relative md:w-1/2 w-full max-w-[31.25rem] aspect-[4/5] custom-clip overflow-hidden shadow-lg">
           <img src={Food} alt="food" className="w-full h-full object-cover" />
-          <div className="absolute top-4 right-4 w-16 h-16 bg-red-600 text-white text-[10px] flex flex-col items-center justify-center text-center rounded-full">
+          <div className="absolute top-4 right-4 w-16 h-16 bg-red-700 text-white text-[10px] flex flex-col items-center justify-center text-center rounded-full">
             MICHELIN
             <br />
             2024
           </div>
 
-          <div className="absolute bottom-4 left-4 w-16 h-16 bg-red-600 text-white text-[10px] flex flex-col items-center justify-center text-center rounded-full">
+          <div className="absolute bottom-4 left-4 w-16 h-16 bg-red-700 text-white text-[10px] flex flex-col items-center justify-center text-center rounded-full">
             MICHELIN
             <br />
             2023

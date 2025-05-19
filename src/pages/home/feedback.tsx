@@ -35,15 +35,24 @@ export default function FeedBack() {
         </div>
 
         <div className="flex flex-1 flex-col lg:flex-row w-full justify-between gap-y-10 lg:gap-20 px-4">
-          {testimonials.map(({ title, content, author }) => (
-            <div key={author} className="text-center flex flex-1 flex-col">
-              <p className="text-special1-font text-[32px] text-brown-500">
-                {title}
-              </p>
-              <p className="text-[0.9375rem] text-gray-500 my-5">{content}</p>
-              <p className="text-white text-[13px] uppercase">{author}</p>
-            </div>
-          ))}
+          {testimonials.map(({ title, content, author }, index) => {
+            const isFaded = index !== 1;
+            return (
+              <div
+                key={author}
+                className={`
+        text-center flex flex-1 flex-col transition-all duration-300
+        ${isFaded ? "lg:opacity-50 lg:translate-y-2" : "lg:opacity-100"}
+      `}
+              >
+                <p className="text-special1-font text-[32px] text-brown-500">
+                  {title}
+                </p>
+                <p className="text-[0.9375rem] text-gray-500 my-5">{content}</p>
+                <p className="text-white text-[13px] uppercase">{author}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </Section.Root>

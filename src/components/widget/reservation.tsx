@@ -31,12 +31,23 @@ export default function Reservation() {
     <Section.Root className="col-full-width content-grid py-0">
       <div className="col-content h-full w-full">
         <div className="flex flex-col lg:flex-row w-full h-full">
-          <div className="flex flex-1 w-full h-[18.75rem] md:h-auto">
+          <div className="relative flex flex-1 w-full h-[18.75rem] md:h-auto">
             <img
               src={ImageBookTable}
               alt="imageBookTable"
               className="w-full h-full object-cover"
             />
+            <div className="absolute bottom-4 right-4 w-16 h-16 bg-red-700 text-white text-[10px] flex flex-col items-center justify-center text-center rounded-full">
+              MICHELIN
+              <br />
+              2024
+            </div>
+
+            <div className="absolute bottom-4 right-24 w-16 h-16 bg-red-700 text-white text-[10px] flex flex-col items-center justify-center text-center rounded-full">
+              MICHELIN
+              <br />
+              2023
+            </div>
           </div>
           <div className="flex flex-1 flex-col w-full h-full bg-cover pt-15 lg:pt-[220px] lg:px-10">
             <h2 className="text-[2.5rem] md:text-[3.125rem] lg:text-[5rem] text-brown-500 title-font">

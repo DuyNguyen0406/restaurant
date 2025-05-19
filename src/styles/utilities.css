@@ -46,6 +46,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: rotate(35deg);
 }
 
+.leaf-shape-45 {
+  clip-path: path("M 65 0 C 130 60 130 135 65 195 C 0 135 0 60 65 0 Z");
+  transform: rotate(60deg);
+}
+
 
 
 

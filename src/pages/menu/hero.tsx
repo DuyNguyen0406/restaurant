@@ -20,7 +20,7 @@ export default function Hero() {
               our warm, attentive service and cozy ambiance make every visit
               special.
             </p>
-            <p className="text-[4.375rem] md:text-[6.25rem] text-brown-500 text-special1-font">
+            <p className="text-[2.375rem] md:text-[4.25rem] text-brown-500 text-special1-font">
               Bistro
             </p>
           </div>
