@@ -77,7 +77,7 @@ export default function ReservationForm() {
         </Button>
       </div>
       {isSubmitted && Object.keys(errors).length > 0 && (
-        <p className="text-gray-500 text-[1.0625remm] px-4 py-2 mt-4 border border-brown-600">
+        <p className="text-gray-500 text-[1.0625rem] px-4 py-2 mt-4 border border-brown-600">
           One or more fields have an error. Please check and try again.
         </p>
       )}

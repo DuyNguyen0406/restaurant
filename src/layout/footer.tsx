@@ -1,5 +1,6 @@
 import Section from "@/components/widget/section";
 import Logo from "@/assets/images/logo.png";
+import ScrollToTopButton from "@/components/widget/button-scroll-to-top";
 
 const scheduleData = [
   {
@@ -42,7 +43,7 @@ export default function Footer() {
               {item.lines.map((line, i) => (
                 <p
                   key={i}
-                  className={`text-[0.9375rem] md:text-[1.0625remm] ${
+                  className={`text-[0.9375rem] md:text-[1.0625rem] ${
                     item.lastLinePrimary && i === item.lines.length - 1
                       ? "text-primary"
                       : "text-gray-500"
@@ -73,6 +74,7 @@ export default function Footer() {
             A WordPress theme by ThemeGoods
           </p>
         </div>
+        <ScrollToTopButton />
       </div>
     </Section.Root>
   );
