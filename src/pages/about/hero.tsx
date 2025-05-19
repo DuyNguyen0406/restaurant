@@ -1,7 +1,42 @@
 import Section from "@/components/widget/section";
 import Food from "@/assets/images/png/about-hero.png";
+import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
+  const numberRef = useRef<HTMLParagraphElement | null>(null);
+  const [count, setCount] = useState(1);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+          let current = 1;
+          const target = 15;
+          const interval = setInterval(() => {
+            if (current <= target) {
+              setCount(current);
+              current++;
+            } else {
+              clearInterval(interval);
+            }
+          }, 50);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (numberRef.current) {
+      observer.observe(numberRef.current);
+    }
+
+    return () => {
+      if (numberRef.current) {
+        observer.unobserve(numberRef.current);
+      }
+    };
+  }, [hasAnimated]);
   return (
     <Section.Root className="col-full-width content-grid pt-[12rem] pb-[6rem] bg-[#0C1424] text-[#D6BFA6]">
       <div className="col-content flex flex-col items-center justify-between gap-12">
@@ -33,8 +68,11 @@ export default function Hero() {
             The Rustic Fork - Farm-Fresh Fare,
             <span className="inline lg:block"> Elegantly Served.</span>
           </p>
-          <p className="text-[2.5rem] lg:text-[5.625rem] text-[#C9A581] title-font">
-            +15
+          <p
+            ref={numberRef}
+            className="text-[2.5rem] lg:text-[5.625rem] text-[#C9A581] title-font"
+          >
+            +{count}
           </p>
           <p className="text-gray-500 text-[13px]">Years of experience</p>
         </div>

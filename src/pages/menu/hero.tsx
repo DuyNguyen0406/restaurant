@@ -48,13 +48,13 @@ export default function Hero() {
 
           <div className="flex flex-1 flex-col justify-center items-center md:items-start w-full pt-10 md:pt-0">
             <p className="text-gray-500 text-2xl uppercase">ESTD - 1990</p>
-            <p className="text-gray-500 text-[1.0625remm] py-5 leading-[170%] text-center md:text-start">
+            <p className="text-gray-500 text-[1.0625rem] py-5 leading-[170%] text-center md:text-start">
               Our bistro is also a place where the community comes together.
               We’re proud to support local farmers, artisans, and winemakers,
               and we strive to reflect the spirit of [Your Location] in
               everything we do.
             </p>
-            <p className="text-white text-[1.0625rem] leading-[170%] text-center md:text-start">
+            <p className="text-gray-500 text-[1.0625rem] leading-[170%] text-center md:text-start">
               Nestled in the heart of [Your Location], our bistro is a
               celebration of simple, elegant cuisine crafted with the freshest
               ingredients and a passion for culinary excellence.
