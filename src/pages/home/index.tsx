@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Hero from "./hero";
 import About from "./about";
-import Menu from "./menu";
+import Menu from "../../components/widget/our-menu";
 import Instagram from "@/components/widget/instagram";
 import FeedBack from "./feedback";
 import Reservation from "@/components/widget/reservation";

@@ -1,6 +1,6 @@
 import Section from "@/components/widget/section";
 import ImageBookTable from "@/assets/images/png/book-table.png";
-import ContactForm from "../../pages/home/contact-form";
+import ContactForm from "../../components/widget/contact-form";
 
 export default function Reservation() {
   return (

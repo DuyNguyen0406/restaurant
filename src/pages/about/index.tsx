@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Hero from "./hero";
-import Menu from "../home/menu";
+import Menu from "../../components/widget/our-menu";
 import Reservation from "./reservation";
 
 function About() {
